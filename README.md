@@ -14,30 +14,16 @@ To run `sum.js`
 node sum.js
 ```
 
-## [Using matchers](https://facebook.github.io/jest/docs/en/using-matchers.html).
+## [Using matchers](https://facebook.github.io/jest/docs/en/using-matchers.html)
 
-`expect()`
+| common matchers | Truthiness   | Numbers             | Strings     | Arrays        | Exceptions |
+| --------------- | ------------ | ------------------- | ----------- | ------------- | -----------|
+| `toBe()`        | `toBeNull()` | `toBeGreaterThan()` | `toMatch()` | `toContain()` | `toThrow()`|
+| `toEqual()`     | `toBeUndefined()` | `toBeGreaterThanOrEqual()` | `not.toMatch()` | `not.toContain()` | |
+| `not.toBe()`    | `toBeDefined()` | `toBeLessThan()` |  |  | |
+|                 | `toBeTruthy()` | `toBeLessThanOrEqual()` |  |  | |
+||`toBeFalsy()`|`toBeCloseTo()`|
 
-`toBe()`
-
-`toEqual()`
-
-.not
-
-## Other things to Learn 
-
-Testing for Truthiness(undefined, null, false)
-
-Number
-
-- Floating Point Peculiarity
-
-Strings
-
-Arrays
-
-Exceptions
-
-[More Matchers (API Documentation)](https://facebook.github.io/jest/docs/en/api.html)
+ > A further deep look at [Matchers (API Documentation)](https://facebook.github.io/jest/docs/en/api.html)
 
 [Next Test asychronous code](https://facebook.github.io/jest/docs/en/asynchronous.html)
