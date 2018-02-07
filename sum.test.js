@@ -37,3 +37,7 @@ const shoppingList = [
   test('the shopping list has beer on it', () => {
     expect(shoppingList).toContain('beer');
   });
+
+  test('a snapshot of sum(2,3)', () => {
+    expect(2+3).toMatchSnapshot();
+  });
