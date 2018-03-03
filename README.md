@@ -22,8 +22,14 @@ node sum.js
 | `toEqual()`     | `toBeUndefined()` | `toBeGreaterThanOrEqual()` | `not.toMatch()` | `not.toContain()` |            |
 | `not.toBe()`    | `toBeDefined()`   | `toBeLessThan()`           |                 |                   |            |
 |                 | `toBeTruthy()`    | `toBeLessThanOrEqual()`    |                 |                   |            |
-|                 | `toBeFalsy()`     |`toBeCloseTo()`             |
+|                 | `toBeFalsy()`     | `toBeCloseTo()`             |
 
   > A further deep look at [Matchers (API Documentation)](https://facebook.github.io/jest/docs/en/api.html)
 
-[Next Test asychronous code](https://facebook.github.io/jest/docs/en/asynchronous.html)
+## [Test asynchronous code](https://facebook.github.io/jest/docs/en/asynchronous.html)
+
+## [Setup and Tear down](https://facebook.github.io/jest/docs/en/setup-teardown.html)
+
+## [Mock Functions](https://facebook.github.io/jest/docs/en/mock-functions.html)
+
+## [Jest Platform](https://facebook.github.io/jest/docs/en/jest-platform.html)
