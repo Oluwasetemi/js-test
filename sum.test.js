@@ -38,6 +38,6 @@ const shoppingList = [
     expect(shoppingList).toContain('beer');
   });
 
-  test('a snapshot of sum(2,3)', () => {
-    expect(2+3).toMatchSnapshot();
+  test('a snapshot of sum(5,3)', () => {
+    expect(5+3).toMatchSnapshot();
   });
