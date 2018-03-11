@@ -106,6 +106,78 @@ node sum.js
 
 ## [Setup and Tear down](https://facebook.github.io/jest/docs/en/setup-teardown.html)
 
+Often while writing tests you have some setup work that needs to happen before tests run, and you have some finishing work that needs to happen after tests run. Jest provides helper functions to handle this.
+
+### Repeating Setup for Many Tests
+
+- `beforeEach`
+- `afterEach`
+
+```js
+beforeEach(() => {
+  initializeCityDatabase();
+});
+
+afterEach(() => {
+  clearCityDatabase();
+});
+
+test('city database has Vienna', () => {
+  expect(isCity('Vienna')).toBeTruthy();
+});
+
+test('city database has San Juan', () => {
+  expect(isCity('San Juan')).toBeTruthy();
+});
+```
+```js
+beforeEach(() => {
+  return initializeCityDatabase();
+});
+
+```
+
+### One-Time Setup
+
+- `beforeAll`
+- `afterAll `
+
+```js
+beforeAll(() => {
+  return initializeCityDatabase();
+});
+
+afterAll(() => {
+  return clearCityDatabase();
+});
+
+test('city database has Vienna', () => {
+  expect(isCity('Vienna')).toBeTruthy();
+});
+
+test('city database has San Juan', () => {
+  expect(isCity('San Juan')).toBeTruthy();
+});
+```
+
+> Use `describe` block to group tests together. All the describe block runs before the actual test runs.
+
+
+```js
+describe('describe string', () => {
+  test('', () => {
+
+  })
+})
+```
+
+### Scoping
+
+### Order of execution of describe and test blocks
+
+### General Advice
+
 ## [Mock Functions](https://facebook.github.io/jest/docs/en/mock-functions.html)
 
 ## [Jest Platform](https://facebook.github.io/jest/docs/en/jest-platform.html)
+
