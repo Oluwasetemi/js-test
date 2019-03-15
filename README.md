@@ -180,4 +180,3 @@ describe('describe string', () => {
 ## [Mock Functions](https://facebook.github.io/jest/docs/en/mock-functions.html)
 
 ## [Jest Platform](https://facebook.github.io/jest/docs/en/jest-platform.html)
-
