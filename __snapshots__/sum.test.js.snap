@@ -1,3 +1,3 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`a snapshot of sum(5,3) 1`] = `8`;
+exports[`A summary of all the test of sum.js a snapshot of sum(5,3) 1`] = `10`;
